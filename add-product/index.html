@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../css/style.css">
+  <title>Add Product</title>
+</head>
+<body>
+  
+  <div id="wrapper">
+    <div id="nav-container">
+      <div>
+        <h2>Add Product</h2>
+      </div>
+      <div>
+        <button id="save-form">Save</button>
+        <button id="cancel-form">Cancel</button>
+      </div>
+    </div>
+    <hr class="hr-line">
+    <div id="response-container">
+
+    </div>
+    <form id="product_form">
+      <div class="form-items">
+        <p class="form-field-title">Enter SKU:</p>
+        <input type="text" id="sku" class="validate-required"> <br>
+      </div>
+      <div class="form-items">
+        <p class="form-field-title">Enter Name:</p>
+        <input type="text" id="name" class="validate-required"> <br>
+      </div>
+      <div class="form-items">
+        <p class="form-field-title">Enter Price:</p>
+        <input type="number" id="price" class="validate-required"> <br>
+      </div>
+      <div class="form-items">
+        <p class="form-field-title">Type Switcher</p>
+        <select id="productType">
+          <!-- <option hidden selected>Select one...</option> -->
+          <option id="DVD">DVD</option>
+          <option id="Book">Book</option>
+          <option id="Furniture">Furniture</option>
+        </select>
+      </div>
+
+      <div class="form-items" id="type-form">
+        
+      </div>
+
+
+    </form>
+  </div>
+  <script  type="module" src="../src/addProductMain.js"></script>
+</body>
+</html>
