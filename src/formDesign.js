@@ -127,7 +127,7 @@ const stringifyProductData = () => {
  */
 const ajaxCall = (data) => {
   const xhr = new XMLHttpRequest();
-  xhr.open('POST', 'http://localhost/custom/scandi/addProduct.php', true);
+  xhr.open('POST', 'https://scandiweb-kiranadh.000webhostapp.com/addProduct.php', true);
 
   xhr.setRequestHeader('Content-type', 'application/x-www-form-urlencoded');
   xhr.onload = function (){

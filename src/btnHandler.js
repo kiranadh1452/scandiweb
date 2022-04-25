@@ -28,7 +28,7 @@ const massDelete = () => {
  */
 const customApi = (deleteId) => {
   const xhr = new XMLHttpRequest();
-  xhr.open('POST', 'http://localhost/custom/scandi/deletion.php', true);
+  xhr.open('POST', 'https://scandiweb-kiranadh.000webhostapp.com/deletion.php', true);
 
   xhr.setRequestHeader('Content-type', 'application/x-www-form-urlencoded');
   xhr.onload = function (){

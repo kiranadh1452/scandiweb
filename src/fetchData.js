@@ -6,8 +6,9 @@ const container = document.getElementById('body-container');
 //Product data is available in a remote server 
 const fetchProductData = async () => {
   container.innerText = ""; // to clear the product listing
-  const response = await fetch('http://localhost/custom/scandi/');
+  const response = await fetch('https://scandiweb-kiranadh.000webhostapp.com/');
   const jsonData = await response.json();
+  console.log(jsonData);
   callMeNow(jsonData);
 }
 
